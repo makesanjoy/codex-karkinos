@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Codex",
+  title: "Codexa",
   description: "Register for our upcoming seminar!",
   icons: {
     icon: "/logo.svg",

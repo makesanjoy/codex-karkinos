@@ -43,7 +43,11 @@ export default function Home() {
           unoptimized
         />
         
-        <button onClick={handleScrollToForm} className="bg-[#AC6BAB] text-white px-5 py-2 rounded-full font-semibold font-[600] hover:bg-[#986DAB]">
+        <button 
+        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfRgPSdpt_OjeiY6pYnaHDukEKOkg4GIDWhx0nEfFK0iF6tOA/viewform', '_blank')}
+        className="bg-[#AC6BAB] text-white px-5 py-2 rounded-full font-semibold font-[600] hover:bg-[#986DAB]"
+        
+        >
          <p className="px-3 py-1">
            Register for Seminar
           </p>
@@ -109,7 +113,10 @@ export default function Home() {
   at Jio Talks Auditorium.<br />
   <strong className="font-bold">Seats are limited—reserve yours today!</strong>
 </p>
-          <button onClick={handleScrollToForm} className="bg-[#AC6BAB] text-white px-5 py-2 rounded-full font-semibold font-[600] hover:bg-[#986DAB]">
+          <button 
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfRgPSdpt_OjeiY6pYnaHDukEKOkg4GIDWhx0nEfFK0iF6tOA/viewform', '_blank')}
+          className="bg-[#AC6BAB] text-white px-5 py-2 rounded-full font-semibold font-[600] hover:bg-[#986DAB]"
+          >
          <p className="px-3 py-1">
            Register for Seminar
           </p>
@@ -391,6 +398,7 @@ export default function Home() {
       type="email"
       id="entry.769673029"
       name="entry.769673029"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
       required
       className="border border-[#707070] rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-yellow-400 focus:border-yellow-400"
     />
@@ -401,6 +409,10 @@ export default function Home() {
     <label htmlFor="entry.661233869" className="block text-gray-500 text-sm mb-1">Phone Number *</label>
     <input
       type="tel"
+      pattern="\d{10}"
+       inputMode="numeric"
+maxLength="10"
+minLength="10"
       id="entry.661233869"
       name="entry.661233869"
       required
